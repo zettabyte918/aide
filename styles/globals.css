@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  opacity: 1;
+}
+.text-danger {
+  color: red;
+}
+.text-valid {
+  color: green;
+}
+.css-co2nuf {
+  display: contents;
+}
+#__next {
+  overflow: hidden;
+}
+.css-1udsvdj-MuiContainer-root {
+  max-width: 100% !important;
+}
+/* .MuiPaper-root{background-color: transparent !important;}
+ */
+/* .MuiPaper-root {
+  background-color: transparent !important;
+} */
+.MuiToolbar-root {
+  background-color: #29738b;
+}
+/* .MuiGrid-item {
+  padding: 73px;
+} */
+/* .makeStyles-section-241{background-color: center;
+} */
+@media (min-width: 900px) {
+  .css-yag1zy-MuiButtonBase-root-MuiIconButton-root {
+    display: none !important;
+  }
+}
+
+/* .MuiPaper-root {background-color: none !important ;
+} */
+.MuiPaper-rounded {
+  border-radius: 13px;
+}
+.MuiButtonBase-root {
+  color: azure;
+}
+.css-l8b9cb {
+  padding-top: 8px;
+  padding-bottom: -3px;
+  background-color: #29738b;
+  width: 100vw;
+  position: initial;
+  /* margin: auto; */
+
+  bottom: 0;
+  width: 100%;
+  /* padding-top: 0px; */
+  height: auto;
+}
+/* .MuiPaper-root {
+    background-color: aqua;
+} */
+/* .css-1sxdyp5 {
+  background-color: #29738B;
+} */
