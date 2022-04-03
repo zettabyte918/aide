@@ -10,7 +10,7 @@ export default function Cta() {
               <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
                 <span className="block">Prêt à plonger ?</span>
                 <span className="block">
-                  Commencez votre voyage avec nous aujourd'hui.
+                  Commencez votre voyage avec nous aujourd&apos;hui.
                 </span>
               </h2>
               <p className="mt-4 text-lg leading-6 text-pink-200">

@@ -97,9 +97,10 @@ export default function Hero() {
             </h1>
             <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
               Faire un ménage de printemps ? Trier vos affaires ? En mouvement?
-              Faites don des objets que vous n'utilisez plus et donnez-leur une
-              seconde vie. Publiez un don sur Aider en quelques secondes, afin
-              que quelqu'un près de chez vous puisse le récupérer gratuitement.
+              Faites don des objets que vous n&apos;utilisez plus et donnez-leur
+              une seconde vie. Publiez un don sur Aider en quelques secondes,
+              afin que quelqu&apos;un près de chez vous puisse le récupérer
+              gratuitement.
             </p>
             <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
               <div className="rounded-md shadow">

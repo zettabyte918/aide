@@ -39,13 +39,13 @@ export default function Features() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
           <h2 className="text-base text-pink-600 font-semibold tracking-wide uppercase">
-            Faire don d'articles
+            Faire don d&apos;articles
           </h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             Donnez une seconde vie à vos affaires
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            Aider est la première application de don d'objets entre
+            Aider est la première application de don d&apos;objets entre
             particuliers. Donnez ou ramassez des objets et de la nourriture
             inutilisés près de chez vous ! Aider est utile, gratuit et
             convivial.
