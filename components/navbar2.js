@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import { PlusSmIcon } from "@heroicons/react/solid";
 import Modal from "./modal2";
 import Link from "next/link";
+import Logo from "./logo";
 
 const user = {
   name: "pfe",
@@ -77,16 +78,12 @@ export default function Navbar() {
                     </Disclosure.Button>
                   </div>
                   <div className="flex-shrink-0 flex items-center">
-                    <img
-                      className="block lg:hidden h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                      alt="Workflow"
-                    />
-                    <img
-                      className="hidden lg:block h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                      alt="Workflow"
-                    />
+                    <div className="block lg:hidden h-8 w-auto">
+                      <Logo />
+                    </div>
+                    <div className="hidden lg:block h-8 w-auto">
+                      <Logo />
+                    </div>
                   </div>
                   <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
                     {navigation.map((item) => (
@@ -94,7 +91,7 @@ export default function Navbar() {
                         <a
                           className={classNames(
                             item.current
-                              ? "bg-gray-900 text-white"
+                              ? "bg-pink-900 text-white"
                               : "text-gray-300 hover:bg-gray-700 hover:text-white",
                             "px-3 py-2 rounded-md text-sm font-medium"
                           )}
@@ -111,7 +108,7 @@ export default function Navbar() {
                     <button
                       type="button"
                       onClick={() => setOpen(true)}
-                      className="relative inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500"
+                      className="relative inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-pink-500 hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-pink-500"
                     >
                       <PlusSmIcon
                         className="-ml-1 mr-2 h-5 w-5"

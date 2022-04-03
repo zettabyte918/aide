@@ -31,7 +31,7 @@ export default function Modal({ open, setOpen }) {
             >
               <div className="pointer-events-auto w-screen max-w-2xl">
                 <div className="flex h-full flex-col overflow-y-scroll bg-white shadow-xl">
-                  <div className="px-4 bg-indigo-700 py-6 sm:px-6">
+                  <div className="px-4 bg-pink-700 py-6 sm:px-6">
                     <div className="flex items-start justify-between">
                       <Dialog.Title className="text-lg font-medium text-gray-50">
                         Information générale
@@ -39,7 +39,7 @@ export default function Modal({ open, setOpen }) {
                       <div className="ml-3 flex h-7 items-center">
                         <button
                           type="button"
-                          className="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:ring-2 focus:ring-indigo-500"
+                          className="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:ring-2 focus:ring-pink-500"
                           onClick={() => setOpen(false)}
                         >
                           <span className="sr-only">Close panel</span>
@@ -64,7 +64,7 @@ export default function Modal({ open, setOpen }) {
                             name="first-name"
                             id="first-name"
                             autoComplete="given-name"
-                            className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                            className="shadow-sm focus:ring-pink-500 focus:border-pink-500 block w-full sm:text-sm border-gray-300 rounded-md"
                           />
                         </div>
                       </div>
@@ -80,7 +80,7 @@ export default function Modal({ open, setOpen }) {
                             id="country"
                             name="country"
                             autoComplete="country-name"
-                            className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                            className="shadow-sm focus:ring-pink-500 focus:border-pink-500 block w-full sm:text-sm border-gray-300 rounded-md"
                           >
                             <option>Pour la maison</option>
                             <option>Habillement</option>
@@ -101,7 +101,7 @@ export default function Modal({ open, setOpen }) {
                             id="about"
                             name="about"
                             rows={3}
-                            className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md"
+                            className="shadow-sm focus:ring-pink-500 focus:border-pink-500 block w-full sm:text-sm border border-gray-300 rounded-md"
                             defaultValue={""}
                           />
                         </div>
@@ -112,7 +112,7 @@ export default function Modal({ open, setOpen }) {
                       <div className="sm:col-span-6">
                         <button
                           type="submit"
-                          className="my-3 w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                          className="my-3 w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
                         >
                           Ajouter
                         </button>

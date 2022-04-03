@@ -1,12 +1,15 @@
-//import Container from "@mui/material/Container";
-import Footer from "@components/Footer";
-import SectionAbout from "@components/SectionAbout";
-//import Image from "next/image";
+import Hero from "@components/hero";
+import Features from "@components/feature";
+import Cta from "@components/cta";
+import Stats from "@components/stats";
 
 const Homepage = () => {
   return (
     <>
-      <SectionAbout />
+      <Hero />
+      <Features />
+      <Stats />
+      <Cta />
     </>
   );
 };
