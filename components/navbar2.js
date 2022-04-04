@@ -57,7 +57,7 @@ export default function Navbar() {
   return (
     <>
       <Modal open={open} setOpen={setOpen} />
-      <Disclosure as="nav" className="fixed w-full z-30 bg-gray-800">
+      <Disclosure as="nav" className="fixed w-full z-30 opacity-95 bg-gray-800">
         {({ open }) => (
           <>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
