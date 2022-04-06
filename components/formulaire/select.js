@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import {
   CheckIcon,
@@ -9,7 +9,7 @@ import {
   ChipIcon,
 } from "@heroicons/react/solid";
 
-const people = [
+const categorie = [
   {
     id: 1,
     name: "Electroménager",
@@ -27,8 +27,18 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Select() {
-  const [selected, setSelected] = useState(people[0]);
+export default function Select({ handleOnChange }) {
+  const [selected, setSelected] = useState(categorie[0]);
+
+  useEffect(() => {
+    let event = {
+      target: {
+        name: "categorie",
+        value: selected,
+      },
+    };
+    handleOnChange(event);
+  }, [selected]);
 
   return (
     <Listbox value={selected} onChange={setSelected}>
@@ -57,7 +67,7 @@ export default function Select() {
               leaveTo="opacity-0"
             >
               <Listbox.Options className="absolute z-10 mt-1 w-full bg-white shadow-lg max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm">
-                {people.map((person) => (
+                {categorie.map((person) => (
                   <Listbox.Option
                     key={person.id}
                     className={({ active }) =>

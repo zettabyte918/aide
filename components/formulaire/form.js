@@ -1,6 +1,20 @@
+import { useReducer } from "react";
 import Select from "./select";
 
 export default function Form() {
+  const [inputValues, setInputValues] = useReducer(
+    (state, newState) => ({ ...state, ...newState }),
+    {}
+  );
+
+  const handleOnChange = (event) => {
+    const { name, value } = event.target;
+    setInputValues({ [name]: value });
+  };
+
+  const handleOnSave = () => {
+    console.log(inputValues);
+  };
   return (
     <form
       action="#"
@@ -16,6 +30,7 @@ export default function Form() {
         </label>
         <div className="mt-1">
           <input
+            onChange={handleOnChange}
             id="titre"
             name="titre"
             type="text"
@@ -41,6 +56,7 @@ export default function Form() {
         </div>
         <div className="mt-1">
           <textarea
+            onChange={handleOnChange}
             id="des"
             name="des"
             rows={4}
@@ -50,7 +66,7 @@ export default function Form() {
         </div>
       </div>
       <div className="sm:col-span-2">
-        <Select />
+        <Select handleOnChange={handleOnChange} />
       </div>
       <div className="sm:col-span-2">
         <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
@@ -92,7 +108,8 @@ export default function Form() {
       </div>
       <div className="text-right sm:col-span-2">
         <button
-          type="submit"
+          onClick={handleOnSave}
+          type="button"
           className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
         >
           Ajouter cette annonce
